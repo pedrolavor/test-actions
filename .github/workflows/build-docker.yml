@@ -28,5 +28,6 @@ jobs:
         with:
           push: true
           tags: lavor/github-actions:latest
+          github-token: ${{ secrets.DOCKERHUB_TOKEN }}
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.DOCKERHUB_TOKEN }}
