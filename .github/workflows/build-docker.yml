@@ -10,9 +10,6 @@ jobs:
   build-n-push:
     runs-on: ubuntu-latest
     steps:
-      # -
-      #   name: Checkout
-      #   uses: actions/checkout@v3
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -29,6 +26,5 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          platforms: linux/amd64,linux/arm64
           push: true
-          tags: pedrolavor/app:0.0.1
+          tags: pedrolavor/app-test:0.0.1
