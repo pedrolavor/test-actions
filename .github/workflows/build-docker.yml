@@ -31,4 +31,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: pedrolavor/github-actions:1.0.1
+          tags: user/app:1.0.1
